@@ -2,12 +2,7 @@ const express = require('express');
 const axios = require('axios');
 const path = require('path');
 
-const app = express();
-app.use(express.json());
-app.use(express.static(path.join(__dirname)));
-
-const OPENAI_API_KEY = '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';
-
+ui
 if (!OPENAI_API_KEY) {
   console.error("OPENAI_API_KEY is missing.");
   process.exit(1);
